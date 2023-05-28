@@ -279,7 +279,7 @@ export default function App() {
                           value={lastDigits}
                           placeholder='3456'
                           readOnly
-                          className="border-none font-semibold text-lg p-0 bg-transparent placeholder-blue-950"
+                          className="focus:outline-none w-16 border-none font-semibold text-lg p-0 bg-transparent placeholder-blue-950"
                         />
                       </div>
                     </div>
@@ -289,7 +289,7 @@ export default function App() {
                           value={date}
                           placeholder='09/22'
                           readOnly
-                          className="border-none font-semibold text-lg p-0 bg-transparent placeholder-blue-950"
+                          className="focus:outline-none w-16 border-none font-semibold text-lg p-0 bg-transparent placeholder-blue-950"
                         />
                       <MasterCard_2 className='w-11 h-11' />
                     </div>
