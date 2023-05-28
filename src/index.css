@@ -11,3 +11,37 @@
 .card {
   background: linear-gradient(180deg, rgba(255,255, 255, 0.8), #fff);
 }
+
+.btn {
+  @apply w-1/2 lg:w-full bg-blue-600 lg:static bottom-0 py-6 lg:px-36 lg:translate-x-0 rounded-lg text-white font-semibold transition ease-in-out delay-200 hover:bg-blue-800
+}
+
+.label {
+  @apply font-semibold mb-1;
+}
+
+.label-text {
+  @apply font-medium text-gray-400 text-[0.68rem];
+}
+
+.input {
+  @apply w-full rounded-lg border-2 border-gray-200 outline-blue-600 focus:bg-gray-100;
+}
+
+.input-2 {
+  @apply text-blue-950 font-semibold placeholder-blue-950;
+}
+
+.error {
+  @apply text-xs my-2 text-red-500 flex justify-end;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button:blank {
+  display: none;
+}
