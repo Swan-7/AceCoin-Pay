@@ -6,7 +6,7 @@ const Timer = () => {
 
     useEffect(() => {
         let myInterval = setInterval(() => {
-            if (seconds > 0) {
+            if (seconds > 0) { //setting count-down timer functionality
                 setSeconds(seconds - 1)
             } if (seconds === 0) {
                 if (minutes === 0) {

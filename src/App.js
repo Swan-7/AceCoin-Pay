@@ -31,27 +31,28 @@ export default function App() {
   const { month, year, cvv, password } = formValues;
   const date = `${month}${slash}${year}`;
 
-  const iconColor = toggleCvv ? 'text-gray-400 fill-current' : 'text-gray-900 fill-current';
-  const passColor = togglePassword ? 'text-gray-900 fill-current' : 'text-gray-400 fill-current';
+  const iconColor = toggleCvv ? 'text-gray-400 fill-current' : 'text-gray-900 fill-current'; //toggling cvv icon color
+  const passColor = togglePassword ? 'text-gray-900 fill-current' : 'text-gray-400 fill-current'; //toggling password icon color
   const lastDigits = cardNum.slice(-4);
 
 
-  const handleClick = () => {
+  const handleClick = () => { //edit icon function to focus the first input
     if (inputRef.current) {
       inputRef.current.focus();
     }
   }
 
-  const handleCardNum = (e) => {
+  //validating card number to take 16 digits from the dom and 25 formatted digits in total
+  const handleCardNum = (e) => { 
     const num = e.target.value;
-    const formatNum = num
+    const formatNum = num //formatting card number to accept only digits 4 at a time with appropriate spacing and hyphens
       .replace(/[^\d]/g, '')
       .replace(/(.{4})/g, '$1 - ')
       .replace(/\s-\s$/, '');
 
     setCardNum(formatNum);
 
-    if (formatNum.length === 25) {
+    if (formatNum.length === 25) { 
       setValidCard(true);
     } else {
       setValidCard(false);
@@ -74,6 +75,7 @@ export default function App() {
 
   }
 
+  //validating month, year and cvv
   const validateInput = (inputName, inputValue) => {
     switch (inputName) {
       case "month":
