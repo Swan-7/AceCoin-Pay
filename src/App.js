@@ -4,7 +4,7 @@ import ThankYou from './Thankyou'
 import formBg from './images/bg.jpg';
 import { ReactComponent as EditIcon } from './images/edit.svg';
 import { ReactComponent as MasterCard } from './images/mastercard.svg';
-import { ReactComponent as MasterCard_2 } from './images/mastercard-2.svg';
+import { ReactComponent as MasterCard2 } from './images/mastercard2.svg';
 import { ReactComponent as Verify } from './images/verified-badge.svg';
 import { ReactComponent as Grid } from './images/dots.svg';
 import { ReactComponent as Apple } from './images/apple.svg';
@@ -293,7 +293,7 @@ export default function App() {
                           readOnly
                           className="focus:outline-none w-16 border-none font-semibold text-lg p-0 bg-transparent placeholder-blue-950"
                         />
-                      <MasterCard_2 className='w-11 h-11' />
+                      <MasterCard2 className='w-11 h-11' />
                     </div>
                     <div className='absolute h-96 w-96 border-2 border-gray-100 top-12 -left-9 -z-10 rounded-full flex items-center justify-center'>
                       <span className='absolute h-72 w-72 border-2 border-gray-100 rounded-full'></span>
